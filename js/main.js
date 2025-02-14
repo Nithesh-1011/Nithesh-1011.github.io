@@ -48,12 +48,7 @@
     });
     
     
-    // Skills
-    $('.skill').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {offset: '80%'});
+   
 
 
     // Portfolio isotope and filter
@@ -68,15 +63,6 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        dots: true,
-        loop: true,
-        items: 1
-    });
     
     
     // Back to top button
